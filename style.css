@@ -1,0 +1,94 @@
+/* Start Global Rules */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* End Global Rules */
+#main-doc {
+  display: flex;
+  gap: 20px;
+}
+@media (max-width: 768px) {
+  #main-doc {
+    display: block;
+  }
+}
+/* Start .nav-header & Nav */
+.nav-header {
+  position: fixed;
+  flex: 1 0 300px;
+  height: 100%;
+}
+@media (max-width: 768px) {
+  .nav-header {
+    position:static;
+  }
+}
+.nav-header h2 {
+  font-size: 20px;
+  padding: 20px 25px;
+}
+#navbar {
+  border: 2px solid #000;
+}
+@media (max-width: 768px) {
+  #navbar {
+    height: 250px;
+    overflow:scroll;
+  }
+}
+#navbar ul {
+  list-style: none;
+}
+#navbar ul li{
+  padding: 12px 20px;
+  border-top: 1px solid #000;
+}
+#navbar ul li:hover {
+  background-color: #ddd;
+}
+#navbar ul li a{
+  color: #000;
+  text-decoration: none;
+}
+/* End .nav-header & Nav */
+/* Start Documentation*/
+.documentation {
+  margin-left: 280px;
+}
+@media (max-width: 768px) {
+  .documentation {
+    margin-left: 0;
+  }
+}
+.main-section {
+  padding: 20px 20px 0;
+}
+.main-section header {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+.main-section p {
+  margin: 10px 0 10px 10px;
+}
+.main-section ul {
+  margin: 0 40px ;
+}
+.main-section ul li {
+  margin: 10px 0;
+}
+.main-section pre {
+  background-color: #eee;
+  margin: 0 20px ;
+}
+/* End Documentation */
